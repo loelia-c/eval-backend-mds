@@ -35,6 +35,29 @@
                     <label for="mail">Mail</label>
                     <input type="email" class="form-control" id="mail" name="mail" required>
                 </div>
+                <div class="form-group">
+                    <label for="type-projet">Type de projet</label>
+                    <select class="form-control" name="type-projet" id="type-projet">
+                        <option value="">>> Sélectionnez un type de projet <<</option>
+                        <option value="wordpress">Wordpress</option>
+                        <option value="vueJS">VueJS</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Options du projet</p>
+                    <div>
+                        <input type="checkbox" id="contact-avance" name="optionsProjet[]" value="Formulaire de contact avancé">
+                        <label for="contact-avance">Formulaire de contact avancé</label>
+                    </div>
+                   <div>
+                       <input type="checkbox" id="adapt-mobile" name="optionsProjet[]" value="Adaptations mobile spécifiques">
+                       <label for="adapt-mobile">Adaptations mobile spécifiques</label>
+                   </div>
+                    <div>
+                        <input type="checkbox" id="design-perso" name="optionsProjet[]" value="Design personnalisé">
+                        <label for="design-perso">Design personnalisé</label>
+                    </div>
+                </div>
 
                 <button type="submit" class="btn btn-outline-info">Valider</button>
             </div>

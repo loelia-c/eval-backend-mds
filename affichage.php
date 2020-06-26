@@ -46,6 +46,31 @@
             <?php echo $_GET['mail']; ?>
         </div>
     </div>
+    <div class="row">
+        <div class="col-lg-2">
+            Type de projet :
+        </div>
+        <div class="col-lg-10">
+            <?php echo $_GET['type-projet']; ?>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2">
+            Options du projet :
+        </div>
+        <div class="col-lg-10">
+            <ul>
+                <?php
+                $tab_opt = $_GET['optionsProjet'];
+                for ($i=0; $i < count($tab_opt); $i++)
+                {
+                    echo '<li>'.$tab_opt[$i].'</li>';
+                }
+                ?>
+            </ul>
+
+        </div>
+    </div>
 </div>
 </body>
 </html>
